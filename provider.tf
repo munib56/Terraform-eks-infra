@@ -1,5 +1,5 @@
-provider "aws" {
-  region = "ap-south-1"
+variable "region" {
+  default = "ap-south-1"
 }
 
 variable "cluster_name" {
@@ -7,7 +7,7 @@ variable "cluster_name" {
 }
 
 variable "cluster_version" {
-  default = "1.22"
+  default = "1.27"
 }
 
 terraform {
